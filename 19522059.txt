@@ -1,7 +1,3 @@
-void growing()
-{
-	snake.push_back(prevTail);
-}
 void genApple()
 {
 	srand(time(0));
@@ -17,6 +13,10 @@ void genApple()
 bool isAteApple()
 {
 	return snake[0].x == apple.x && snake[0].y == apple.y;
+}
+void growing()
+{
+	snake.push_back(prevTail);
 }
 void displayScore()
 {
